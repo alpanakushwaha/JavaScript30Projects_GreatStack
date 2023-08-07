@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="enter city name" spellcheck="false" />
+        <button>
+          <img src="https://cdn-icons-png.flaticon.com/512/3031/3031293.png" />
+        </button>
+      </div>
+      <div class="error">
+        <p>Invalid city name</p>
+      </div>
+
+      <div class="weather">
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/648/648198.png"
+          class="weather-icon"
+        />
+        <h1 class="temp">--°C</h1>
+        <h2 class="city">-----</h2>
+        <div class="details">
+          <div class="col">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/6393/6393411.png"
+              alt=""
+            />
+            <div>
+              <p class="humidity">--%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2011/2011448.png"
+              alt=""
+            />
+            <div>
+              <p class="wind">-- kmph</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

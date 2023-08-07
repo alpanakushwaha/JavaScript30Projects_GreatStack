@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  width: 10;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ee4edb, #3b23dd);
+  padding: 10px;
+}
+.todo-app {
+  width: 100%;
+  max-width: 450px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+.todo-app h2 {
+  color: #007;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.todo-app h2 img {
+  width: 80px;
+  margin-left: 10px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(203, 200, 200);
+  border-radius: 30px;
+  padding: 0px 20px;
+  margin-bottom: 15px;
+}
+
+input {
+  /* flex: 1; */
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 5px;
+}
+
+button {
+  padding: 10px 40px;
+  border: none;
+  outline: none;
+  background: #ff7;
+  color: #f0f;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 35px;
+}
+ul li {
+  list-style: none;
+  font-size: 18px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(https://flyclipart.com/thumb2/checkbox-unchecked-icon-616494.png);
+  background-size: cover;
+  background-position: center;
+  top: 7px;
+  left: 8px;
+}
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(https://cdn.icon-icons.com/icons2/2645/PNG/512/check_square_icon_160269.png);
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+}
+ul li span:hover {
+  background: #edeef0;
+  border-radius: 40%;
+}

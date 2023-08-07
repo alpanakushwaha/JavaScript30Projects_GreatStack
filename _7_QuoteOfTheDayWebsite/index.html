@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Of The Day</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quote-box">
+      <h2>Quote of the Day</h2>
+      <blockquote id="quote">Loading...</blockquote>
+      <span id="author">Loading...</span>
+
+      <div class="second-div">
+        <button onClick="getQuote(apiUrl)">New Quote</button>
+        <button class="tweet-btn" onclick="tweet()">
+          <img
+            src="https://vectorseek.com/wp-content/uploads/2023/07/Twitter-X-New-Logo-Vector-2.png"
+          />Tweet
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
