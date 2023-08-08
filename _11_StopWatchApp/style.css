@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap");
+
+/* * {
+  margin: 0;
+  padding: 0;
+  block-size: border-box;
+  font-family: "Poppins", sans-serif;
+} */
+body {
+  background: #edeaff;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Courier Prime", monospace;
+  /* font-family: 'Playfair Display', serif; */
+}
+
+.stopwatch {
+  width: 90%;
+  max-width: 600px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://img.rawpixel.com/private/static/images/website/2022-05/rm422-076-x.jpg?w=1200&h=1200&dpr=1&fit=clip&crop=default&fm=jpg&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=444e119094ef45a3248aa529fb696b2b");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 40px 0;
+  color: #fff;
+  margin: 200px auto 0;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.stopwatch h1 {
+  margin-top: 60px;
+  font-size: 64px;
+  font-weight: 300;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.controls div {
+  width: 25px;
+  height: 25px;
+  margin: 30px;
+  background: #f9fafa;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #242525;
+  box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
+  cursor: pointer;
+  transform: scale(2);
+}
+
+.controls div:nth-child(1) {
+  width: 18px;
+  height: 18px;
+  transform: scale(3);
+}
+.controls div:nth-child(2) {
+  transform: scale(3);
+}
