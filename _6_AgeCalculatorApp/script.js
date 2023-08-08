@@ -6,7 +6,7 @@ let result = document.getElementById("result");
 function calculateAge() {
   let birthDate = new Date(userInput.value);
   let d1 = birthDate.getDate();
-  let m1 = birthDate.getMonth() + 1;
+  let m1 = birthDate.getMonth() + 1; //
   let y1 = birthDate.getFullYear();
 
   let today = new Date();
