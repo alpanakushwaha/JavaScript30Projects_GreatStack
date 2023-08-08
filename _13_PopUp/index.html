@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PopUp using JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+    </div>
+    <div class="popup" id="popup">
+      <i class="fa-solid fa-circle-check"></i>
+      <h2>Thank You!</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quae.
+      </p>
+      <button type="button" onclick="closePopup()">OK</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
