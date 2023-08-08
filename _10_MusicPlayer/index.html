@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angles-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img
+          src="https://icon-library.com/images/song-icon-png/song-icon-png-13.jpg"
+          class="song-img"
+        />
+        <h1>Song-Title</h1>
+        <p>Album, Movie, Artist Name</p>
+        <audio id="song" src="sample-6s.mp3" type="audio/mpeg"></audio>
+        <input type="range" value="0" id="progress-bar" />
+        <div class="controls">
+          <div>
+            <i class="fa-solid fa-backward"></i></div>
+          <div onclick="playPause()">  <i class="fa-regular fa-circle-play" id="ctrlIcon"></i></div>
+            <!-- <i class="fa-regular fa-circle-pause"></i> -->
+        <div>  <i class="fa-solid fa-forward"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
