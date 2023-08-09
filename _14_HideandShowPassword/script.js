@@ -15,3 +15,4 @@ eyeIcon.onclick = function () {
     eyeIcon.classList.add("fa-eye-slash");
   }
 };
+
