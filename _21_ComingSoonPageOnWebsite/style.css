@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, "Poppins";
+  box-sizing: border-box;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("//unsplash.it/600/400");
+  background-size: cover;
+  background-position: center;
+  padding: 0 8%;
+  position: relative;
+}
+.logo {
+  width: 75px;
+  padding: 20px 0;
+  cursor: pointer;
+}
+.content {
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  color: #ebe5e6;
+}
+.content h1 {
+  font-size: 64px;
+  font-weight: 600;
+}
+span {
+  color: #eb112e;
+}
+
+button {
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  padding: 12px 25px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+button i {
+  margin: 0 0 0 10px;
+  transform: scale(2);
+}
+.launch-time {
+  display: flex;
+}
+.launch-time div {
+  flex-basis: 100px;
+}
+.launch-time div p {
+  font-size: 60px;
+  margin: 0 0 -14px 0;
+}
+#rocket-icon {
+  margin: 40px;
+  color: grey;
+  transform: scale(15);
+  position: absolute;
+  right: 10%;
+  bottom: 40%;
+  animation: rocket-icon 4s linear infinite;
+}
+@keyframes rocket-icon {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  100% {
+    bottom: 105%;
+    opacity: 1;
+  }
+}
