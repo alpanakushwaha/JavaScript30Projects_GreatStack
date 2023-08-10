@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div>
+          <label for="fullName">Full Name</label>
+          <input
+            type="text"
+            name="fullName"
+            id="contact-name"
+            placeholder="Enter you name"
+            onkeyup="validateName()"
+          />
+          <span id="name-error"></span>
+        </div>
+        <div>
+          <label for="phoneNumber">Phone No.</label>
+          <input
+            type="tel"
+            name="phoneNumber"
+            id="phone-number"
+            placeholder="123 456 7890"
+            onkeyup="validatePhone()"
+          />
+          <span id="phone-error"></span>
+        </div>
+        <div>
+          <label for="email">Email Id</label>
+          <input
+            type="email"
+            name="email"
+            id="email-id"
+            placeholder="Enter Email Id"
+            onkeyup="validateEmail()"
+          />
+          <span id="email-error"></span>
+          <br />
+        </div>
+        <div>
+          <label for="message">Your Message</label>
+          <!-- <input
+          type="textarea"
+          name="message"
+          id=""
+          placeholder="Enter your message"
+        /> -->
+          <textarea
+            name="message"
+            placeholder="Enter your message"
+            rows="5"
+            id="contact-msg"
+            onkeyup="validateMessage()"
+          ></textarea>
+          <span id="msg-error"></span>
+        </div>
+        <div>
+          <button onclick="return validateForm()" type="submit" class="btn">
+            Submit
+          </button>
+          <span id="submit-error"></span>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
