@@ -32,6 +32,11 @@
   width: 12px;
   transition: transform 0.5s;
 }
+
+.fa-caret-down {
+  transform: scale(1.5);
+}
+
 #list {
   width: 100%;
   background: rgba(255, 255, 255, 0.7);
@@ -41,25 +46,29 @@
 
 .option {
   width: 100%;
-  padding: 7px 0 0 70px;
+  /* padding: 7px 0 0 70px; */
   list-style: none;
   cursor: pointer;
   /* margin: 5px; */
   /* box-sizing: border-box; */
   position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
 }
 
-i {
-  margin: 10px;
+li i {
+  margin-top: 20px;
   transform: scale(1.5);
   position: relative;
   left: 25px;
-  top: 12px;
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; */
+  top: 18px;
 }
+p {
+  margin: 0 0 10px 60px;
+}
+
 .option:hover {
   background: rgba(255, 255, 255, 0.7);
 }
@@ -68,5 +77,5 @@ i {
   visibility: hidden;
 }
 .rotate {
-  transform: rotate(180deg);
+  transform: rotate(180deg) scale(1.5);
 }
