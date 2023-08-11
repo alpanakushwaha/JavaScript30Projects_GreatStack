@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page Design</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="product">
+        <div class="gallery">
+          <img
+            src="/images/Dell-Sept-14-removebg-preview.png"
+            id="productImg"
+          />
+          <div class="controls">
+            <span class="btn active"></span>
+            <span class="btn"></span>
+            <span class="btn"></span>
+          </div>
+        </div>
+        <div class="details">
+          <h1>Dell Laptop</h1>
+          <h2>₹50000.00</h2>
+          <h3>15% Off</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            nihil eligendi explicabo aspernatur nostrum quas. Nihil, expedita
+            velit! Esse, repellat.
+          </p>
+          <form>
+            <div class="color-select">
+              <p>Color</p>
+              <label for="black">
+                <input type="radio" name="color" id="black" />
+                <span class="color-1"></span>
+              </label>
+              <label for="silver">
+                <input type="radio" name="color" id="silver" />
+                <span class="color-2"></span>
+              </label>
+            </div>
+            <div class="ram-select">
+              <p>RAM Memory</p>
+              <label for="fourGB">
+                <input type="radio" name="color" id="fourGB" />
+                <span>4 GB</span>
+              </label>
+              <label for="eightGB">
+                <input type="radio" name="color" id="eightGB" />
+                <span>8 GB</span>
+              </label>
+            </div>
+
+            <div class="emiPlan-select">
+              <p>No. of Months</p>
+              <input type="number" value="1" />
+            </div>
+
+            <button>Buy Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
