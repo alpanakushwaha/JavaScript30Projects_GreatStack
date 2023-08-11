@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circular Progress Bar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="skill">
+      <div class="outer">
+        <div class="inner">
+          <div id="number"></div>
+        </div>
+      </div>
+
+      <!-- <img src="https://img.freepik.com/free-vector/follow-me-social-business-theme-design_24877-50426.jpg?w=740&t=st=1691737253~exp=1691737853~hmac=35cd31d51b1a8df081ee49523ecb8ecb2ec3ac5158380fb682d46cceb08f3c17" alt=""> -->
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        width="160px"
+        height="160px"
+      >
+        <defs>
+          <linearGradient id="GradientColor">
+            <stop offset="0%" stop-color="#e91e63" />
+            <stop offset="100%" stop-color="#673ab7" />
+          </linearGradient>
+        </defs>
+        <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+      </svg>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
