@@ -1,7 +1,7 @@
-const apiKey = "d5fc6710948eeadeda160a30f7d7037f";
-const apiUrl =
-  "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
-// const apiUrl = "https://goweather.herokuapp.com/weather/prayagraj";
+const apiKey = "";
+// const apiUrl =
+//   "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+const apiUrl = "https://goweather.herokuapp.com/weather/prayagraj";
 
 const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
